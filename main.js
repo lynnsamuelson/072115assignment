@@ -26,7 +26,7 @@ function multiplyByFive (num2) {
 }
 
 var button = document.getElementById("math");
-
+var output = document.getElementById("output");
 var buttonClick = function () {
 	var input = document.getElementById("input_field").value;
 	console.log("The user entered" + input);
@@ -34,11 +34,9 @@ var buttonClick = function () {
 	if (input === "") {
 		alert("Enter a number");
 	} else if (input > 10000) {
-		return divideByTen;
+		output.innerHTML = (divideByTen(input));
 	} else if (input < 10000) {
-		return multiplyByFive;
-	}
-
-var outputData = document.getElementById("output");		
-outputData.innerHTML = buttonClick();
+		output.innerHTML = (multiplyByFive(input));
+	}	
+}
 
