@@ -33,8 +33,12 @@ var buttonClick = function () {
 	console.log("The button was clicked");
 	if (input === "") {
 		alert("Enter a number");
+	} else if (input > 10000) {
+		return divideByTen;
+	} else if (input < 10000) {
+		return multiplyByFive;
 	}
-	} else {
 
-	}
-}
+var outputData = document.getElementById("output");		
+outputData.innerHTML = buttonClick();
+
