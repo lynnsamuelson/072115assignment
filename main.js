@@ -37,6 +37,8 @@ var buttonClick = function () {
 		output.innerHTML = (divideByTen(input));
 	} else if (input < 10000) {
 		output.innerHTML = (multiplyByFive(input));
+	} else {
+		alert("That is not a number.");
 	}	
 }
 
